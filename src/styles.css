@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.bi-folder-fill {
+  color: #0366d6;
+}
+
+.bi-file-earmark-text {
+  color: #586069;
+}
