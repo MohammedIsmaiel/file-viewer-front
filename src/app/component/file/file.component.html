@@ -1,0 +1,7 @@
+<div class="container mt-4">
+  <button class="btn btn-success mx-1" (click)="startTailing()" [disabled]="tailing">Start Tailing</button>
+  <button class="btn btn-danger mx-1" (click)="stopTailing()" [disabled]="!tailing">Stop Tailing</button>
+  <button class="btn btn-primary mx-1" (click)="goBack()">Back</button>
+  <h3>File: {{ path }}</h3>
+  <pre>{{ fileContent }}</pre>
+</div>
