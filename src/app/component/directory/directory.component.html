@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <button class="btn btn-primary mt-2" (click)="goBack()">Back</button>
+  <h3>Directory: {{ path }}</h3>
+  <ul class="list-group">
+    <li *ngFor="let file of files" class="list-group-item d-flex justify-content-between align-items-center">
+      <span>
+        <i [ngClass]="file.directory ? 'bi bi-folder-fill' : 'bi bi-file-earmark-text'"></i>
+        {{ file.name }}
+      </span>
+      <button *ngIf="file.directory" class="btn btn-primary" (click)="openDirectory(file)">Open</button>
+      <button *ngIf="!file.directory" class="btn btn-secondary" (click)="openFile(file)">View</button>
+    </li>
+  </ul>
+</div>
